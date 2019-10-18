@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Continental</title>
+    <link rel="icon" href="{% static 'img/dog-icono.png' %}">
+    <link rel="stylesheet" href="{% static 'style/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'style/estil.css' %}">
+    <link rel="stylesheet" href="{% static 'style/estilos.cs' %}">
+    <link rel="stylesheet" href="{% static 'style/font-awesome.css' %}">
+    <!--ref-->
+    <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">The Continental</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="formulario.html">Registro</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+       
+    <main>
+        <div class="slideshow">
+            <ul class="slider">
+                <li>
+                    <img src="{% static 'img/1.jpg'%}" alt="Contando Experiencias">
+                    <section class="caption">
+                        <br>
+                        <h2>Familia Perez</h2>
+                    </section>
+                </li>
+                <li>
+                    <img src="{% static 'img/5.jpg'%}" alt="Contando Experiencias">
+                    <section class="caption">
+                        <br>
+                        <h2>Familia Moya</h2>
+                    </section>
+                </li>
+                <li>
+                    <img src="{% static 'img/2.jpg'%}" alt="Contando Experiencias">
+                    <section class="caption">
+                        <br>
+                        <h2>Familia Sanchez</h2>
+                    </section>
+                </li>
+                <li>
+                    <img src="{% static 'img/3.jpg'%}" alt="Contando Experiencias">
+                    <section class="caption">
+                        <br>
+                        <h2>Familia Gonzales</h2>
+                    </section>
+                </li>
+                <li>
+                    <img src="{% static 'img/4.jpg'%}" alt="Contando Experiencias">
+                    <section class="caption">
+                        <br>
+                        <h2>Familia Fuentes</h2>
+                    </section>
+                </li>
+            </ul>
+    
+            <ol class="pagination">
+                
+            </ol>
+        
+            <div class="left">
+                <span class="fa fa-chevron-left"></span>
+            </div>
+    
+            <div class="right">
+                <span class="fa fa-chevron-right"></span>
+            </div>
+        </div>
+
+        <section id="Bienvenidos">
+            <h2>Hotel The Continental</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est neque illo culpa eos tenetur ut ex perspiciatis nemo tempora.</p>
+        </section>
+
+        <div class="main"> <!--era un section-->
+            <div class="contenedor">
+                <section class="info">
+                    <div class="info__columna">
+                        <img src="{% static 'img/img1.jpeg' %} " alt="Perritos Rescatados" class="info__img">
+                        <h2 class="info__titulo">Tom</h2>
+                        <p class="info__txt">El mejor hotel para perros, bien cuidados, mi perro se siente comodo, 
+                                             podemos ir a vacacionar tranquilamente porque sabemos que quedan en buenas manos muy recomendado.</p>
+                    </div>
+                    <div class="info__columna">
+                        <img src="{% static 'img/img3.jpg' %}" alt="Perritos Rescatados" class="info__img">
+                        <h2 class="info__titulo">Blacky</h2>
+                        <p class="info__txt">Siempre cuando vamos de viaje traemos a nuestro perro a este hotel 
+                                             y nunca nos defrauda lo cuidan como se debe y jamás hemos tenido problemas.</p>
+                    </div>
+                    <div class="info__columna">
+                        <img src="{% static 'img/img4.jpg' %} " alt="Perritos Rescatados" class="info__img">
+                        <h2 class="info__titulo">Duke</h2>
+                        <p class="info__txt">Estamos feliz de poder saber que podemos confiar en este hotel, llegamos 
+                                             por recomendaciones y no nos arrepentimos super bien cuidado nuestro perro y con las comodidades necesarias para el.</p>
+                    </div>
+                </section>
+
+                <section class="cursos">
+                        <h2 class="section__titulo">Nuestros Servicios</h2>
+                        <div class="cursos__columna">
+                            <img src="{% static 'img/img2.jpg' %}" alt="Descripcion de perros" class="cursos__img">
+                            <div class="cursos__descripcion">
+                                <h3 class="cursos_titulo">Peluqueria Canina</h3>
+                                <p class="cursos__txt">Con este servicio podrás tener a tu regalón(a) siempre impecable y a la moda con las tendencias actuales de la peluquería canina.</p>
+                            </div>
+                        </div>
+                        <div class="cursos__columna">
+                            <img src="{% static 'img/img5.jpg' %}" alt="Descripcion de perros" class="cursos__img">
+                            <div class="cursos__descripcion">
+                                <h3 class="cursos_titulo">Jardin Canino</h3>
+                                <p class="cursos__txt">En nuestro servicio de jardin canino nos preocupamos para que el día a día de tu perrito(a) sea entretenido y seguro dentro de nuestras instalaciones.</p>
+                            </div>
+                        </div>
+                        <div class="cursos__columna">
+                            <img src="{% static 'img/img6.jpg' %}" alt="Descripcion de perros" class="cursos__img">
+                            <div class="cursos__descripcion">
+                                <h3 class="cursos_titulo">Tienda Canina</h3>
+                                <p class="cursos__txt">En nuestro Petshop podrás encontrar alimentos, juguetes y accesorios de la mejor calidad a un precio cómodo.</p>
+                            </div>
+                        </div>
+                        <div class="cursos__columna">
+                            <img src="{% static 'img/img7.png' %}" alt="Descripcion de perros" class="cursos__img">
+                            <div class="cursos__descripcion">
+                                <h3 class="cursos_titulo">The Continental Park</h3>
+                                <p class="cursos__txt">Te sorprenderemos con un panorama familiar de fin de semana dentro de nuestras instalaciones en nuestro parque.</p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div> 
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+           <a href="" class="icon-facebook"></a>
+           <a href="" class="icon-twitter"></a>
+           <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; The Continental 2019 - Todos los derechos reservados. </p>
+    </footer>
+
+
+</body>
+</html>

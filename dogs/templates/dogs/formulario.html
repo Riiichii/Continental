@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Continental</title>
+    <link rel="icon" href="img/dog-icono.png">
+    <!--Referencias-->
+    <link rel="stylesheet" href="style/estil.css">
+    <link rel="stylesheet" href="style/registro.css">
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">The Continental</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="">Registro</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="form__top">
+                <h2>Formulario <span>Registro</span></h2>
+            </div>		
+            <form class="form__reg">
+                <input type="text" class="input" id="rut" name="rut" oninput="checkRut(this)" placeholder="&#128100; RUT" required autofocus>
+                <input id="txtNombre" class="input" type="text" maxlength="25" minlength="15" placeholder="&#128100;  Nombre" required>
+                <label for="fecha">Fecha Nacimiento</label>
+                <input id="fecha" class="input" type="date" min="1980-01-01" max="2019-01-01" required> <!--revisar bien-->
+                <input class="input" type="email" placeholder="&#9993;  Email" required>
+                <input id="numero" class="input" type="text" name="numero" size="9" onchange="validarSiNumero(thisvalue);" placeholder="&#128222;  Telefono" required>
+                <label for="txtRegion">Region</label>
+                <select class="input" id="txtRegion" oninput="selectCity()"></select>
+                <label for="txtCity">Ciudad</label>
+                <select class="input" id="txtCity"></select>
+                <label for="file">Fotografia</label>
+                <input class="input" type="file" id="file" onChange="return fileValidation()" required>
+                <input id="txtNombreDog" class="input" type="text" maxlength="10" minlength="7" placeholder="&#128054;  Nombre Perro" required>
+                <label for="Raza">Raza Perro</label>
+                <select class="input" id="Raza">
+                    <option>Border Collie</option>
+                    <option>Caniche</option>
+                    <option>Pastor alemán</option>
+                    <option>Golden retriever</option>
+                    <option>Doberman</option>
+                    <option>Pastor de las Shetland</option>
+                    <option>Labrador retriever</option>
+                    <option>Papillon</option>
+                    <option>Rottweiler</option>
+                    <option>Pastor australiano</option>
+                </select>
+                <div class="btn__form">
+                    <input class="btn__submit" type="submit" value="REGISTRAR">
+                    <input class="btn__reset" type="reset" value="LIMPIAR">	
+                </div>
+                <script src="js/validacion.js"></script>
+            </form> 
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; The Continental 2019 - Todos los derechos reservados. </p>
+    </footer>
+</body>
+</html>
